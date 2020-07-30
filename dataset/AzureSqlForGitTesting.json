@@ -1,0 +1,22 @@
+{
+	"name": "AzureSqlForGitTesting",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AdventureWorks",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Col1",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "TestGit"
+		}
+	}
+}
