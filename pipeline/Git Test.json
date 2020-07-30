@@ -21,12 +21,25 @@
 						"queryTimeout": "02:00:00"
 					},
 					"sink": {
-						"type": "AzureSqlSink",
-						"tableOption": "autoCreate"
+						"type": "AzureSqlSink"
 					},
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "col1",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Col1",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
@@ -42,7 +55,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "AdventureWorks",
+						"referenceName": "AzureSqlForGitTesting",
 						"type": "DatasetReference"
 					}
 				]
