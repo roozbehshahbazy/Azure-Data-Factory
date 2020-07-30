@@ -1,0 +1,131 @@
+{
+	"name": "CopyFromAzureSQLToSnowFlake",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy data",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "AzureSqlSource",
+						"sqlReaderQuery": "select \n\nProductID,\nisnull(Name,'Unk') as ProductName,\nisnull(Color,'Unk') as ProductColor,\nisnull(SafetyStockLevel,0) as SafetyStockLevel,\nisnull(Size,'Unk') as Size,\nisnull(ReorderPoint,0) as ReorderPoint,\nisnull(StandardCost,0) as StandardCost\n\n\nfrom [Production].[Product]",
+						"queryTimeout": "02:00:00"
+					},
+					"sink": {
+						"type": "SnowflakeSink",
+						"preCopyScript": "truncate table DEMO_DB.DW.PRODUCTS ",
+						"importSettings": {
+							"type": "SnowflakeImportCopyCommand"
+						}
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "SnowFlaketoBlob",
+							"type": "LinkedServiceReference"
+						},
+						"path": "staging"
+					},
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "ProductID",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "PRODUCTID",
+									"type": "Int64"
+								}
+							},
+							{
+								"source": {
+									"name": "ProductName",
+									"type": "String"
+								},
+								"sink": {
+									"name": "PRODUCTNAME",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ProductColor",
+									"type": "String"
+								},
+								"sink": {
+									"name": "PRODUCTCOLOR",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "SafetyStockLevel",
+									"type": "Int16"
+								},
+								"sink": {
+									"name": "SAFETYSTOCKLEVEL",
+									"type": "Int64"
+								}
+							},
+							{
+								"source": {
+									"name": "Size",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Size",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ReorderPoint",
+									"type": "Int16"
+								},
+								"sink": {
+									"name": "REORDERPOINT",
+									"type": "Int64"
+								}
+							},
+							{
+								"source": {
+									"name": "StandardCost",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "STANDARDCOST",
+									"type": "Double"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "AdventureWorks",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "SnowflakeTable",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
