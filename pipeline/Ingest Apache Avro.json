@@ -1,0 +1,6 @@
+{
+	"name": "Ingest Apache Avro",
+	"properties": {
+		"annotations": []
+	}
+}
