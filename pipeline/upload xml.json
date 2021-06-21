@@ -34,7 +34,6 @@
 					},
 					"sink": {
 						"type": "AzureSqlSink",
-						"tableOption": "autoCreate",
 						"disableMetricsCollection": false
 					},
 					"enableStaging": false,
@@ -44,26 +43,46 @@
 							{
 								"source": {
 									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:Rate']"
+								},
+								"sink": {
+									"name": "Rate",
+									"type": "Decimal"
 								}
 							},
 							{
 								"source": {
 									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:RebateId']"
+								},
+								"sink": {
+									"name": "RebateId",
+									"type": "Int64"
 								}
 							},
 							{
 								"source": {
 									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:RebateValueId']"
+								},
+								"sink": {
+									"name": "RebateValueId",
+									"type": "Int64"
 								}
 							},
 							{
 								"source": {
 									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:ValueRangeFrom']"
+								},
+								"sink": {
+									"name": "ValueRangeFrom",
+									"type": "Decimal"
 								}
 							},
 							{
 								"source": {
 									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:ValueRangeTo']"
+								},
+								"sink": {
+									"name": "ValueRangeTo",
+									"type": "Decimal"
 								}
 							}
 						]
@@ -77,7 +96,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "AdventureWorks",
+						"referenceName": "AzureSqlTable1",
 						"type": "DatasetReference"
 					}
 				]
