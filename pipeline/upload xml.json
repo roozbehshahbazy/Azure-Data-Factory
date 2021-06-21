@@ -20,10 +20,6 @@
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
-							"wildcardFileName": {
-								"value": "RebateValues*.xml",
-								"type": "Expression"
-							},
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
@@ -44,7 +40,7 @@
 						"mappings": [
 							{
 								"source": {
-									"path": "['ns:Rate']"
+									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:Rate']"
 								},
 								"sink": {
 									"name": "Rate",
@@ -53,7 +49,7 @@
 							},
 							{
 								"source": {
-									"path": "['ns:RebateId']"
+									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:RebateId']"
 								},
 								"sink": {
 									"name": "RebateId",
@@ -62,7 +58,7 @@
 							},
 							{
 								"source": {
-									"path": "['ns:RebateValueId']"
+									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:RebateValueId']"
 								},
 								"sink": {
 									"name": "RebateValueId",
@@ -71,7 +67,7 @@
 							},
 							{
 								"source": {
-									"path": "['ns:ValueRangeFrom']"
+									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:ValueRangeFrom']"
 								},
 								"sink": {
 									"name": "ValueRangeFrom",
@@ -80,7 +76,7 @@
 							},
 							{
 								"source": {
-									"path": "['ns:ValueRangeTo']"
+									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:ValueRangeTo']"
 								},
 								"sink": {
 									"name": "ValueRangeTo",
@@ -88,7 +84,7 @@
 								}
 							}
 						],
-						"collectionReference": "$['ns:RebateValues']['ns:RebateValues']"
+						"collectionReference": ""
 					}
 				},
 				"inputs": [
