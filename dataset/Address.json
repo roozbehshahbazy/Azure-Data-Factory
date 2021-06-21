@@ -10,10 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": {
-					"value": "'Address'+*+'xml'",
-					"type": "Expression"
-				},
 				"container": "xmlupload"
 			}
 		}
