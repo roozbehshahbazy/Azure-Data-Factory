@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": "RebateValues2.xml",
 				"container": "xmlupload"
 			}
 		}
