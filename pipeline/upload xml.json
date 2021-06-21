@@ -28,7 +28,8 @@
 						},
 						"formatSettings": {
 							"type": "XmlReadSettings",
-							"validationMode": "none",
+							"validationMode": "xsd",
+							"detectDataType": true,
 							"namespaces": true
 						}
 					},
