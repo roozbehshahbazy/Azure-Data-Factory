@@ -1,0 +1,71 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "RebateValueId",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "Rate",
+				"type": "decimal",
+				"precision": 28,
+				"scale": 10
+			},
+			{
+				"name": "RebateId",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "ValueRangeFrom",
+				"type": "decimal",
+				"precision": 28,
+				"scale": 10
+			},
+			{
+				"name": "ValueRangeTo",
+				"type": "decimal",
+				"precision": 28,
+				"scale": 10
+			},
+			{
+				"name": "BatchId",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Source",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DateTimeLoaded",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "Environment",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UpdateType",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RowVersion",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "RebateValues"
+		}
+	}
+}
