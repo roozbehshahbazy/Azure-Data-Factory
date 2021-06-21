@@ -34,7 +34,6 @@
 					},
 					"sink": {
 						"type": "AzureSqlSink",
-						"writeBatchSize": 1000,
 						"preCopyScript": "truncate table [dbo].[RebateValues]",
 						"disableMetricsCollection": false
 					},
