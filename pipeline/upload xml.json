@@ -28,7 +28,7 @@
 						},
 						"formatSettings": {
 							"type": "XmlReadSettings",
-							"validationMode": "xsd",
+							"validationMode": "none",
 							"detectDataType": true,
 							"namespaces": true
 						}
@@ -44,7 +44,7 @@
 						"mappings": [
 							{
 								"source": {
-									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:Rate']"
+									"path": "['ns:Rate']"
 								},
 								"sink": {
 									"name": "Rate",
@@ -53,7 +53,7 @@
 							},
 							{
 								"source": {
-									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:RebateId']"
+									"path": "['ns:RebateId']"
 								},
 								"sink": {
 									"name": "RebateId",
@@ -62,7 +62,7 @@
 							},
 							{
 								"source": {
-									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:RebateValueId']"
+									"path": "['ns:RebateValueId']"
 								},
 								"sink": {
 									"name": "RebateValueId",
@@ -71,7 +71,7 @@
 							},
 							{
 								"source": {
-									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:ValueRangeFrom']"
+									"path": "['ns:ValueRangeFrom']"
 								},
 								"sink": {
 									"name": "ValueRangeFrom",
@@ -80,14 +80,15 @@
 							},
 							{
 								"source": {
-									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:ValueRangeTo']"
+									"path": "['ns:ValueRangeTo']"
 								},
 								"sink": {
 									"name": "ValueRangeTo",
 									"type": "Decimal"
 								}
 							}
-						]
+						],
+						"collectionReference": "$['ns:RebateValues']['ns:RebateValues']"
 					}
 				},
 				"inputs": [
