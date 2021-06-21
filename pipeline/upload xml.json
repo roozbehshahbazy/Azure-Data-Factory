@@ -37,7 +37,37 @@
 						"tableOption": "autoCreate",
 						"disableMetricsCollection": false
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:Rate']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:RebateId']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:RebateValueId']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:ValueRangeFrom']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:ValueRangeTo']"
+								}
+							}
+						]
+					}
 				},
 				"inputs": [
 					{
