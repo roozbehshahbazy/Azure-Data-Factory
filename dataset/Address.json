@@ -1,0 +1,21 @@
+{
+	"name": "Address",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "xml files",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Xml",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "'Address'+*+'xml'",
+					"type": "Expression"
+				},
+				"container": "xmlupload"
+			}
+		}
+	}
+}
