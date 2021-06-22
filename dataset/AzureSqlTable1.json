@@ -9,58 +9,32 @@
 		"type": "AzureSqlTable",
 		"schema": [
 			{
-				"name": "RebateValueId",
-				"type": "bigint",
-				"precision": 19
+				"name": "author",
+				"type": "nvarchar"
 			},
 			{
-				"name": "Rate",
+				"name": "title",
+				"type": "nvarchar"
+			},
+			{
+				"name": "genre",
+				"type": "nvarchar"
+			},
+			{
+				"name": "price",
 				"type": "decimal",
-				"precision": 28,
-				"scale": 10
+				"precision": 18,
+				"scale": 0
 			},
 			{
-				"name": "RebateId",
-				"type": "bigint",
-				"precision": 19
+				"name": "publish_date",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
 			},
 			{
-				"name": "ValueRangeFrom",
-				"type": "decimal",
-				"precision": 28,
-				"scale": 10
-			},
-			{
-				"name": "ValueRangeTo",
-				"type": "decimal",
-				"precision": 28,
-				"scale": 10
-			},
-			{
-				"name": "BatchId",
+				"name": "description",
 				"type": "nvarchar"
-			},
-			{
-				"name": "Source",
-				"type": "nvarchar"
-			},
-			{
-				"name": "DateTimeLoaded",
-				"type": "datetime2",
-				"scale": 7
-			},
-			{
-				"name": "Environment",
-				"type": "nvarchar"
-			},
-			{
-				"name": "UpdateType",
-				"type": "nvarchar"
-			},
-			{
-				"name": "RowVersion",
-				"type": "int",
-				"precision": 10
 			}
 		],
 		"typeProperties": {

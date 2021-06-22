@@ -19,6 +19,7 @@
 						"type": "XmlSource",
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
+							"maxConcurrentConnections": 0,
 							"recursive": true,
 							"wildcardFileName": {
 								"value": "books*.xml",
