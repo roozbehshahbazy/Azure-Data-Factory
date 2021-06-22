@@ -65,7 +65,7 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "RebateValues"
+			"table": "books"
 		}
 	}
 }
