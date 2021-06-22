@@ -38,7 +38,14 @@
 						"preCopyScript": "truncate table [dbo].[RebateValues]",
 						"disableMetricsCollection": false
 					},
-					"enableStaging": false,
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "xml files",
+							"type": "LinkedServiceReference"
+						},
+						"path": "xmlupload"
+					},
 					"translator": {
 						"type": "TabularTranslator",
 						"mappings": [
