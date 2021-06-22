@@ -8,6 +8,21 @@
 		"AdventureWorks_connectionString": {
 			"value": ""
 		},
+		"CosmosDb1_connectionString": {
+			"value": ""
+		},
+		"AzureFileStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureFileStorage2_connectionString": {
+			"value": ""
+		},
+		"xml files_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
 		"SnowFlaketoBlob_sasUri": {
 			"value": ""
 		},
