@@ -36,7 +36,7 @@
 					},
 					"sink": {
 						"type": "AzureSqlSink",
-						"preCopyScript": "truncate table [dbo].[RebateValues]",
+						"preCopyScript": "truncate table [dbo].[books]",
 						"disableMetricsCollection": false
 					},
 					"enableStaging": false,
