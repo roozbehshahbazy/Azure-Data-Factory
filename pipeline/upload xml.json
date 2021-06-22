@@ -44,47 +44,56 @@
 						"mappings": [
 							{
 								"source": {
-									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:Rate']"
+									"path": "$['catalog']['book'][0]['author']"
 								},
 								"sink": {
-									"name": "Rate",
+									"name": "author",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['catalog']['book'][0]['title']"
+								},
+								"sink": {
+									"name": "title",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['catalog']['book'][0]['genre']"
+								},
+								"sink": {
+									"name": "genre",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['catalog']['book'][0]['price']"
+								},
+								"sink": {
+									"name": "price",
 									"type": "Decimal"
 								}
 							},
 							{
 								"source": {
-									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:RebateId']"
+									"path": "$['catalog']['book'][0]['publish_date']"
 								},
 								"sink": {
-									"name": "RebateId",
-									"type": "Int64"
+									"name": "publish_date",
+									"type": "DateTime"
 								}
 							},
 							{
 								"source": {
-									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:RebateValueId']"
+									"path": "$['catalog']['book'][0]['description']"
 								},
 								"sink": {
-									"name": "RebateValueId",
-									"type": "Int64"
-								}
-							},
-							{
-								"source": {
-									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:ValueRangeFrom']"
-								},
-								"sink": {
-									"name": "ValueRangeFrom",
-									"type": "Decimal"
-								}
-							},
-							{
-								"source": {
-									"path": "$['ns:RebateValues']['ns:RebateValues'][0]['ns:ValueRangeTo']"
-								},
-								"sink": {
-									"name": "ValueRangeTo",
-									"type": "Decimal"
+									"name": "description",
+									"type": "String"
 								}
 							}
 						],
