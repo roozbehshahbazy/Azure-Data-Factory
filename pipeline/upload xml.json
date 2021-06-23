@@ -96,6 +96,15 @@
 									"name": "description",
 									"type": "String"
 								}
+							},
+							{
+								"source": {
+									"path": "$['catalog']['book'][0]['@id']"
+								},
+								"sink": {
+									"name": "id",
+									"type": "String"
+								}
 							}
 						],
 						"collectionReference": ""
