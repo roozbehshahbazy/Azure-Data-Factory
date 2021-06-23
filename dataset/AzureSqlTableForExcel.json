@@ -1,0 +1,29 @@
+{
+	"name": "AzureSqlTableForExcel",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AdventureWorks",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ViewName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FriendlyName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ViewExistsInDW",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "dsv"
+		}
+	}
+}

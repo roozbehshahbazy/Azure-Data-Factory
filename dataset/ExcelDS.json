@@ -1,0 +1,34 @@
+{
+	"name": "ExcelDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageForExcel",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "dsv",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Z Cube Changes.xlsx",
+				"container": "csv"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "View Name",
+				"type": "String"
+			},
+			{
+				"name": "Friendly Name",
+				"type": "String"
+			},
+			{
+				"name": "View Exists in DW ?",
+				"type": "String"
+			}
+		]
+	}
+}
