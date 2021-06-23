@@ -39,7 +39,14 @@
 						"preCopyScript": "truncate table [dbo].[books]",
 						"disableMetricsCollection": false
 					},
-					"enableStaging": false,
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "linkedService1",
+							"type": "LinkedServiceReference"
+						},
+						"path": "csv"
+					},
 					"enableSkipIncompatibleRow": true,
 					"translator": {
 						"type": "TabularTranslator",
