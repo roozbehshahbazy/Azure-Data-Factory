@@ -1,5 +1,5 @@
 {
-	"name": "Address",
+	"name": "book",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "xml files",

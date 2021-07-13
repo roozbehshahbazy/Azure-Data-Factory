@@ -114,7 +114,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Address",
+						"referenceName": "book",
 						"type": "DatasetReference"
 					}
 				],
