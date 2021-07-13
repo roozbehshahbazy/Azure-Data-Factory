@@ -24,6 +24,12 @@
 				"typeProperties": {
 					"source": {
 						"type": "XmlSource",
+						"additionalColumns": [
+							{
+								"name": "filename",
+								"value": "$$FILEPATH"
+							}
+						],
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"maxConcurrentConnections": 0,
@@ -116,7 +122,7 @@
 							},
 							{
 								"source": {
-									"path": "$['@activity(\\'GetMetadata\\').output.itemName']"
+									"path": "$['filename']"
 								},
 								"sink": {
 									"name": "filename",
