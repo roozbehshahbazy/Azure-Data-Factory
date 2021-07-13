@@ -114,7 +114,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "book",
+						"referenceName": "books",
 						"type": "DatasetReference"
 					}
 				],
