@@ -35,6 +35,14 @@
 			{
 				"name": "description",
 				"type": "nvarchar"
+			},
+			{
+				"name": "id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "filename",
+				"type": "nvarchar"
 			}
 		],
 		"typeProperties": {
