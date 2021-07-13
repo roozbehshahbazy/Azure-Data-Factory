@@ -11,9 +11,9 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AdventureWorks'"
 		},
-		"CosmosDb1_connectionString": {
+		"AzureBlobStorageForExcel_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'CosmosDb1'"
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorageForExcel'"
 		},
 		"AzureFileStorage1_connectionString": {
 			"type": "secureString",
@@ -23,13 +23,21 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureFileStorage2'"
 		},
-		"xml files_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'xml files'"
-		},
 		"AzureSqlDatabase1_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase1'"
+		},
+		"CosmosDb1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'CosmosDb1'"
+		},
+		"linkedService1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'linkedService1'"
+		},
+		"xml files_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'xml files'"
 		},
 		"SnowFlaketoBlob_sasUri": {
 			"type": "secureString",
@@ -69,8 +77,8 @@
 					"AdventureWorks_connectionString": {
 						"value": "[parameters('AdventureWorks_connectionString')]"
 					},
-					"CosmosDb1_connectionString": {
-						"value": "[parameters('CosmosDb1_connectionString')]"
+					"AzureBlobStorageForExcel_connectionString": {
+						"value": "[parameters('AzureBlobStorageForExcel_connectionString')]"
 					},
 					"AzureFileStorage1_connectionString": {
 						"value": "[parameters('AzureFileStorage1_connectionString')]"
@@ -78,11 +86,17 @@
 					"AzureFileStorage2_connectionString": {
 						"value": "[parameters('AzureFileStorage2_connectionString')]"
 					},
-					"xml files_connectionString": {
-						"value": "[parameters('xml files_connectionString')]"
-					},
 					"AzureSqlDatabase1_connectionString": {
 						"value": "[parameters('AzureSqlDatabase1_connectionString')]"
+					},
+					"CosmosDb1_connectionString": {
+						"value": "[parameters('CosmosDb1_connectionString')]"
+					},
+					"linkedService1_connectionString": {
+						"value": "[parameters('linkedService1_connectionString')]"
+					},
+					"xml files_connectionString": {
+						"value": "[parameters('xml files_connectionString')]"
 					},
 					"SnowFlaketoBlob_sasUri": {
 						"value": "[parameters('SnowFlaketoBlob_sasUri')]"

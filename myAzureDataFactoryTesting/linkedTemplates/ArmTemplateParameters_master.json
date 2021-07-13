@@ -8,7 +8,7 @@
 		"AdventureWorks_connectionString": {
 			"value": ""
 		},
-		"CosmosDb1_connectionString": {
+		"AzureBlobStorageForExcel_connectionString": {
 			"value": ""
 		},
 		"AzureFileStorage1_connectionString": {
@@ -17,10 +17,16 @@
 		"AzureFileStorage2_connectionString": {
 			"value": ""
 		},
-		"xml files_connectionString": {
+		"AzureSqlDatabase1_connectionString": {
 			"value": ""
 		},
-		"AzureSqlDatabase1_connectionString": {
+		"CosmosDb1_connectionString": {
+			"value": ""
+		},
+		"linkedService1_connectionString": {
+			"value": ""
+		},
+		"xml files_connectionString": {
 			"value": ""
 		},
 		"SnowFlaketoBlob_sasUri": {
