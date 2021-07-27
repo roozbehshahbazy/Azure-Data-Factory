@@ -11,10 +11,6 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AdventureWorks'"
 		},
-		"AzureBlobStorageForExcel_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorageForExcel'"
-		},
 		"AzureFileStorage1_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureFileStorage1'"
@@ -39,6 +35,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'xml files'"
 		},
+		"AzureBlobStorageForExcel_properties_typeProperties_connectionString_secretName": {
+			"type": "string",
+			"defaultValue": "storage"
+		},
 		"SnowFlaketoBlob_sasUri": {
 			"type": "secureString",
 			"metadata": "Secure string for 'sasUri' of 'SnowFlaketoBlob'"
@@ -46,6 +46,10 @@
 		"Snowflake_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'Snowflake'"
+		},
+		"mykv_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://RoozKeyVault.vault.azure.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -77,9 +81,6 @@
 					"AdventureWorks_connectionString": {
 						"value": "[parameters('AdventureWorks_connectionString')]"
 					},
-					"AzureBlobStorageForExcel_connectionString": {
-						"value": "[parameters('AzureBlobStorageForExcel_connectionString')]"
-					},
 					"AzureFileStorage1_connectionString": {
 						"value": "[parameters('AzureFileStorage1_connectionString')]"
 					},
@@ -103,6 +104,12 @@
 					},
 					"Snowflake_connectionString": {
 						"value": "[parameters('Snowflake_connectionString')]"
+					},
+					"mykv_properties_typeProperties_baseUrl": {
+						"value": "[parameters('mykv_properties_typeProperties_baseUrl')]"
+					},
+					"AzureBlobStorageForExcel_properties_typeProperties_connectionString_secretName": {
+						"value": "[parameters('AzureBlobStorageForExcel_properties_typeProperties_connectionString_secretName')]"
 					}
 				}
 			},

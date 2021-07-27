@@ -8,9 +8,6 @@
 		"AdventureWorks_connectionString": {
 			"value": ""
 		},
-		"AzureBlobStorageForExcel_connectionString": {
-			"value": ""
-		},
 		"AzureFileStorage1_connectionString": {
 			"value": ""
 		},
@@ -29,11 +26,17 @@
 		"xml files_connectionString": {
 			"value": ""
 		},
+		"AzureBlobStorageForExcel_properties_typeProperties_connectionString_secretName": {
+			"value": "storage"
+		},
 		"SnowFlaketoBlob_sasUri": {
 			"value": ""
 		},
 		"Snowflake_connectionString": {
 			"value": ""
+		},
+		"mykv_properties_typeProperties_baseUrl": {
+			"value": "https://RoozKeyVault.vault.azure.net/"
 		}
 	}
 }
