@@ -1,0 +1,19 @@
+{
+	"name": "powerquery1",
+	"properties": {
+		"type": "WranglingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"name": "AdventureWorksEmployee",
+					"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tisolationLevel: 'READ_UNCOMMITTED',\n\tformat: 'table') ~>  AdventureWorksEmployee",
+					"dataset": {
+						"referenceName": "AdventureWorksEmployee",
+						"type": "DatasetReference"
+					}
+				}
+			],
+			"script": "section Section1;\r\nshared AdventureWorksEmployee = let\r\n  AdfDoc = Sql.Database(\"azuresqlmytestserver.database.windows.net\", \"AdventureWorks\", [CreateNavigationProperties = false]),\r\n  InputTable = AdfDoc{[Schema = \"dbo\", Item = \"Employee\"]}[Data]\r\nin\r\n  InputTable;\r\nshared UserQuery = let\r\n  Source = AdventureWorksEmployee,\r\n  #\"Added custom\" = Table.AddColumn(Source, \"TotalHours\", each [VacationHours] + [SickLeaveHours])\r\nin\r\n  #\"Added custom\";\r\n"
+		}
+	}
+}
