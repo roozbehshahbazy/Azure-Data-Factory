@@ -1,0 +1,113 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AdventureWorks",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "SubmissionMasterKey",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SubmissionKey",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DataProviderID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LocalSubmissionID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LocalResubmissionID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NZRISResubmissionID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ContactEmailAddressForDataSubmission",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DataStartDate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DataEndDate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CoverageIncluded",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CoverageExcluded",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AccuracyQuality",
+				"type": "nvarchar"
+			},
+			{
+				"name": "StandardCaveats",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DataSource",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DataSourceDescription",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DateDataExtracted",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IsResponseRateChecked",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "IsFormatChecked",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "IsObligationChecked",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "IsCodesetChecked",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "IsDedupeChecked",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "RecID",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Submission"
+		}
+	}
+}

@@ -1,0 +1,183 @@
+{
+	"name": "loadjson",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "JsonSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "JsonReadSettings"
+						}
+					},
+					"sink": {
+						"type": "AzureSqlSink"
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "['Data Provider ID']"
+								},
+								"sink": {
+									"name": "DataProviderID",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "['Local Submission ID']"
+								},
+								"sink": {
+									"name": "LocalSubmissionID",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "['Local Resubmission ID']"
+								},
+								"sink": {
+									"name": "LocalResubmissionID",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "['NZRIS Resubmission ID']"
+								},
+								"sink": {
+									"name": "NZRISResubmissionID",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "['Contact email address for Data Submission']"
+								},
+								"sink": {
+									"name": "ContactEmailAddressForDataSubmission",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "['Data Start Date']"
+								},
+								"sink": {
+									"name": "DataStartDate",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "['Data End Date']"
+								},
+								"sink": {
+									"name": "DataEndDate",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "['Coverage (included)']"
+								},
+								"sink": {
+									"name": "CoverageIncluded",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "['Coverage (excluded)']"
+								},
+								"sink": {
+									"name": "CoverageExcluded",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "['Accuracy / Quality']"
+								},
+								"sink": {
+									"name": "AccuracyQuality",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "['Standard Caveats']"
+								},
+								"sink": {
+									"name": "StandardCaveats",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "['Data Source']"
+								},
+								"sink": {
+									"name": "DataSource",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "['Data Source Description']"
+								},
+								"sink": {
+									"name": "DataSourceDescription",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "['Date Data Extracted']"
+								},
+								"sink": {
+									"name": "DateDataExtracted",
+									"type": "String"
+								}
+							}
+						],
+						"collectionReference": "$['Submission']",
+						"mapComplexValuesToString": false
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "Json",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "AzureSqlTable1",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}

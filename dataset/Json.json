@@ -1,0 +1,1935 @@
+{
+	"name": "Json",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "thetajsonfiles"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"Submission": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"Item": {
+								"type": "string"
+							},
+							"Data Provider ID": {
+								"type": "number"
+							},
+							"Local Submission ID": {
+								"type": "null"
+							},
+							"Local Resubmission ID": {
+								"type": "number"
+							},
+							"NZRIS Resubmission ID": {
+								"type": "number"
+							},
+							"Contact email address for Data Submission": {
+								"type": "string"
+							},
+							"Data Start Date": {
+								"type": "string"
+							},
+							"Data End Date": {
+								"type": "string"
+							},
+							"Coverage (included)": {
+								"type": "string"
+							},
+							"Coverage (excluded)": {
+								"type": "string"
+							},
+							"Accuracy / Quality": {
+								"type": "string"
+							},
+							"Standard Caveats": {
+								"type": "string"
+							},
+							"Data Source": {
+								"type": "string"
+							},
+							"Data Source Description": {
+								"type": "string"
+							},
+							"Date Data Extracted": {
+								"type": "string"
+							}
+						}
+					}
+				},
+				"SubmissionEXTRA": {
+					"type": "array"
+				},
+				"Person": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"Item": {
+								"type": "string"
+							},
+							"Data Owner ID": {
+								"type": "number"
+							},
+							"Local Person ID": {
+								"type": "string"
+							},
+							"Given Name": {
+								"type": "string"
+							},
+							"Other Given Names": {
+								"type": "string"
+							},
+							"Family Name": {
+								"type": "string"
+							},
+							"Date of Birth": {
+								"type": "string"
+							},
+							"Gender": {
+								"type": "string"
+							},
+							"Prior Local Person ID": {
+								"type": "string"
+							},
+							"Gender other information": {
+								"type": "string"
+							},
+							"Ethnicity 1": {
+								"type": "string"
+							},
+							"Ethnicity 2": {
+								"type": "string"
+							},
+							"Ethnicity 3": {
+								"type": "string"
+							},
+							"Iwi Affiliation 1": {
+								"type": "null"
+							},
+							"Iwi Affiliation 2": {
+								"type": "null"
+							},
+							"Iwi Affiliation 3": {
+								"type": "null"
+							},
+							"Person ID Type 1": {
+								"type": "string"
+							},
+							"Person ID 1": {
+								"type": "string"
+							},
+							"Person ID Type 2": {
+								"type": "string"
+							},
+							"Person ID 2": {
+								"type": "string"
+							},
+							"Person ID Type 3": {
+								"type": "string"
+							},
+							"Person ID 3": {
+								"type": "null"
+							},
+							"Career Stage 1": {
+								"type": "string"
+							},
+							"Year Achieved 1": {
+								"type": "number"
+							},
+							"Career Stage 2": {
+								"type": "string"
+							},
+							"Year Achieved 2": {
+								"type": "number"
+							},
+							"Career Stage 3": {
+								"type": "string"
+							},
+							"Year Achieved 3": {
+								"type": "number"
+							},
+							"Academic Qualification (NZREG)": {
+								"type": "string"
+							},
+							"Academic Qualification (ISCED-P)": {
+								"type": "string"
+							},
+							"Date Academic Qualification Conferred": {
+								"type": "string"
+							},
+							"Discipline of Academic Qualification (NZSCEDFIELD)": {
+								"type": "string"
+							},
+							"Discipline of Academic Qualification (ISCED-F)": {
+								"type": "string"
+							},
+							"Awarding Institution of Academic Qualification": {
+								"type": "string"
+							},
+							"Research Topic": {
+								"type": "string"
+							},
+							"Research Start Year": {
+								"type": "number"
+							},
+							"Prestigious Prize or Medal": {
+								"type": "string"
+							},
+							"Awarding Institution of Prize or Medal": {
+								"type": "string"
+							},
+							"Amount of Prize/Medal": {
+								"type": "number"
+							},
+							"Year of Recognition": {
+								"type": "number"
+							},
+							"Professional Membership": {
+								"type": "string"
+							},
+							"Organisation ID Type 1": {
+								"type": "string"
+							},
+							"Organisation ID 1": {
+								"type": "string"
+							},
+							"Professional Qualification": {
+								"type": "string"
+							},
+							"Organisation ID Type 2": {
+								"type": "string"
+							},
+							"Organisation ID 2": {
+								"type": "string"
+							},
+							"Local Role Description": {
+								"type": "string"
+							},
+							"Protection Pattern 1": {
+								"type": "string"
+							},
+							"Protection Expiration 1": {
+								"type": "string"
+							},
+							"Expiry Date 1": {
+								"type": "string"
+							},
+							"Protection Pattern 2": {
+								"type": "null"
+							},
+							"Protection Expiration 2": {
+								"type": "null"
+							},
+							"Expiry Date 2": {
+								"type": "null"
+							},
+							"Protection Pattern 3": {
+								"type": "null"
+							},
+							"Protection Expiration 3": {
+								"type": "null"
+							},
+							"Expiry Date 3": {
+								"type": "null"
+							}
+						}
+					}
+				},
+				"PersonEXTRA": {
+					"type": "array"
+				},
+				"Organisation": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"Item": {
+								"type": "string"
+							},
+							"Data Owner ID": {
+								"type": "null"
+							},
+							"Local Organisation ID 1": {
+								"type": "string"
+							},
+							"Organisation Type": {
+								"type": "string"
+							},
+							"Prior Local Organisation ID": {
+								"type": "number"
+							},
+							"Parent Organisation ID Type": {
+								"type": "string"
+							},
+							"Parent Organisation ID": {
+								"type": "string"
+							},
+							"Date of establishment": {
+								"type": "string"
+							},
+							"Date of disestablishment": {
+								"type": "string"
+							},
+							"Organisation External ID Type 1": {
+								"type": "string"
+							},
+							"Organisation External ID Value 1": {
+								"type": "string"
+							},
+							"Organisation External ID Type 2": {
+								"type": "string"
+							},
+							"Organisation External ID Value 2": {
+								"type": "string"
+							},
+							"Organisation External ID Type 3": {
+								"type": "string"
+							},
+							"Organisation External ID Value 3": {
+								"type": "string"
+							},
+							"Local Organisation ID 2": {
+								"type": "string"
+							},
+							"Organisation Identifier Type": {
+								"type": "string"
+							},
+							"Organisation Identifier Value": {
+								"type": "string"
+							},
+							"Organisation Name Type": {
+								"type": "string"
+							},
+							"Organisation Name Value": {
+								"type": "string"
+							},
+							"Organisation Name Start Date": {
+								"type": "string"
+							},
+							"Organisation Name End Date": {
+								"type": "string"
+							},
+							"Organisation Name Comment": {
+								"type": "string"
+							},
+							"Protection Pattern 1": {
+								"type": "string"
+							},
+							"Protection Expiration 1": {
+								"type": "string"
+							},
+							"Expiry Date 1": {
+								"type": "null"
+							},
+							"Protection Pattern 2": {
+								"type": "null"
+							},
+							"Protection Expiration 2": {
+								"type": "null"
+							},
+							"Expiry Date 2": {
+								"type": "null"
+							},
+							"Protection Pattern 3": {
+								"type": "null"
+							},
+							"Protection Expiration 3": {
+								"type": "null"
+							},
+							"Expiry Date 3": {
+								"type": "null"
+							}
+						}
+					}
+				},
+				"OrganisationEXTRA": {
+					"type": "array"
+				},
+				"Group": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"Item": {
+								"type": "string"
+							},
+							"Data Owner ID": {
+								"type": "null"
+							},
+							"Local Group ID": {
+								"type": "number"
+							},
+							"Group Purpose": {
+								"type": "string"
+							},
+							"Group Name Type": {
+								"type": "string"
+							},
+							"Group Name Value": {
+								"type": "string"
+							},
+							"Name start date": {
+								"type": "string"
+							},
+							"Name end date": {
+								"type": "string"
+							},
+							"Group Name comment": {
+								"type": "string"
+							},
+							"Group Identifier Type": {
+								"type": "string"
+							},
+							"Group Identifier Value": {
+								"type": "number"
+							},
+							"Protection Pattern 1": {
+								"type": "string"
+							},
+							"Protection Expiration 1": {
+								"type": "string"
+							},
+							"Expiry Date 1": {
+								"type": "null"
+							},
+							"Protection Pattern 2": {
+								"type": "null"
+							},
+							"Protection Expiration 2": {
+								"type": "null"
+							},
+							"Expiry Date 2": {
+								"type": "null"
+							},
+							"Protection Pattern 3": {
+								"type": "null"
+							},
+							"Protection Expiration 3": {
+								"type": "null"
+							},
+							"Expiry Date 3": {
+								"type": "null"
+							},
+							"Column20": {
+								"type": "null"
+							},
+							"Column21": {
+								"type": "null"
+							},
+							"Column22": {
+								"type": "null"
+							},
+							"Column23": {
+								"type": "null"
+							},
+							"Column24": {
+								"type": "null"
+							},
+							"Column25": {
+								"type": "null"
+							},
+							"Column26": {
+								"type": "null"
+							},
+							"Column27": {
+								"type": "null"
+							},
+							"Column28": {
+								"type": "null"
+							},
+							"Column29": {
+								"type": "null"
+							},
+							"Column30": {
+								"type": "null"
+							},
+							"Column31": {
+								"type": "null"
+							},
+							"Column32": {
+								"type": "null"
+							},
+							"Column33": {
+								"type": "null"
+							},
+							"Column34": {
+								"type": "null"
+							}
+						}
+					}
+				},
+				"GroupEXTRA": {
+					"type": "array"
+				},
+				"AMAssetPool": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"Item": {
+								"type": "string"
+							},
+							"Data Owner ID": {
+								"type": "null"
+							},
+							"Local Asset Pool ID": {
+								"type": "string"
+							},
+							"Establishment Date": {
+								"type": "string"
+							},
+							"Disestablishment Date": {
+								"type": "string"
+							},
+							"Purpose 1": {
+								"type": "string"
+							},
+							"Asset Pool Name": {
+								"type": "string"
+							},
+							"Asset Pool Name Type": {
+								"type": "string"
+							},
+							"Asset Pool Name start date": {
+								"type": "string"
+							},
+							"Asset Pool Name end date": {
+								"type": "string"
+							},
+							"Asset Pool Name Comment": {
+								"type": "string"
+							},
+							"Appropriation": {
+								"type": "string"
+							},
+							"Appropriation Period": {
+								"type": "string"
+							},
+							"Vote": {
+								"type": "string"
+							},
+							"Scope 1": {
+								"type": "string"
+							},
+							"Estimate Type": {
+								"type": "string"
+							},
+							"Start Year": {
+								"type": "number"
+							},
+							"End Year": {
+								"type": "number"
+							},
+							"Amount": {
+								"type": "number"
+							},
+							"Supplier Organisation Type": {
+								"type": "string"
+							},
+							"Supplier Organisation Industry": {
+								"type": "string"
+							},
+							"Supplier Organisation ID Type": {
+								"type": "string"
+							},
+							"Supplier Organisation ID": {
+								"type": "number"
+							},
+							"Funding Person ID Type": {
+								"type": "null"
+							},
+							"Funding Person ID": {
+								"type": "null"
+							},
+							"Purpose 2": {
+								"type": "string"
+							},
+							"Scope 2": {
+								"type": "string"
+							},
+							"Resource Type": {
+								"type": "string"
+							},
+							"Minimum Resource Quantity": {
+								"type": "number"
+							},
+							"Maximum Resource Quantity": {
+								"type": "number"
+							},
+							"Resource Measure - Currency": {
+								"type": "string"
+							},
+							"Resource Measure - Non-Currency": {
+								"type": "null"
+							},
+							"Resource Value": {
+								"type": "number"
+							},
+							"Start Date": {
+								"type": "string"
+							},
+							"End Date": {
+								"type": "string"
+							},
+							"Protection Pattern 1": {
+								"type": "string"
+							},
+							"Protection Expiration 1": {
+								"type": "string"
+							},
+							"Expiry Date 1": {
+								"type": "string"
+							},
+							"Protection Pattern 2": {
+								"type": "null"
+							},
+							"Protection Expiration 2": {
+								"type": "null"
+							},
+							"Expiry Date 2": {
+								"type": "null"
+							},
+							"Protection Pattern 3": {
+								"type": "null"
+							},
+							"Protection Expiration 3": {
+								"type": "null"
+							},
+							"Expiry Date 3": {
+								"type": "null"
+							}
+						}
+					}
+				},
+				"AMAssetPoolEXTRA": {
+					"type": "array"
+				},
+				"AMPlannedDistribution": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"Item": {
+								"type": "string"
+							},
+							"Data Owner ID": {
+								"type": "null"
+							},
+							"Local Asset Pool ID": {
+								"type": "string"
+							},
+							"Local Distribution ID": {
+								"type": "number"
+							},
+							"Distribution Name": {
+								"type": "string"
+							},
+							"Allocation Method": {
+								"type": "string"
+							},
+							"Expected Award Determination Date": {
+								"type": "string"
+							},
+							"Period Type": {
+								"type": "string"
+							},
+							"Period Start Date": {
+								"type": "string"
+							},
+							"Period End Date": {
+								"type": "string"
+							},
+							"Period Comment": {
+								"type": "string"
+							},
+							"Resource Type": {
+								"type": "string"
+							},
+							"Minimum Resource Quantity": {
+								"type": "number"
+							},
+							"Maximum Resource Quantity": {
+								"type": "number"
+							},
+							"Resource Measure - Currency": {
+								"type": "string"
+							},
+							"Resource Measure - Non-Currency": {
+								"type": "null"
+							},
+							"Resource Value": {
+								"type": "number"
+							},
+							"Constraint Type": {
+								"type": "string"
+							},
+							"Constraint": {
+								"type": "string"
+							},
+							"Constraint additional information": {
+								"type": "string"
+							},
+							"Protection Pattern 1": {
+								"type": "string"
+							},
+							"Protection Expiration 1": {
+								"type": "string"
+							},
+							"Expiry Date 1": {
+								"type": "null"
+							},
+							"Protection Pattern 2": {
+								"type": "null"
+							},
+							"Protection Expiration 2": {
+								"type": "null"
+							},
+							"Expiry Date 2": {
+								"type": "null"
+							},
+							"Protection Pattern 3": {
+								"type": "null"
+							},
+							"Protection Expiration 3": {
+								"type": "null"
+							},
+							"Expiry Date 3": {
+								"type": "null"
+							}
+						}
+					}
+				},
+				"AMPlannedDistributionEXTRA": {
+					"type": "array"
+				},
+				"AMApplication": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"Item": {
+								"type": "string"
+							},
+							"Data Owner ID": {
+								"type": "null"
+							},
+							"Local Asset Pool ID": {
+								"type": "string"
+							},
+							"Local Distribution ID": {
+								"type": "number"
+							},
+							"Local Application ID": {
+								"type": "string"
+							},
+							"Prior Local Application ID": {
+								"type": "string"
+							},
+							"Application Type": {
+								"type": "string"
+							},
+							"Application Phase": {
+								"type": "string"
+							},
+							"Proposal Title 1": {
+								"type": "string"
+							},
+							"Outcome Goal": {
+								"type": "string"
+							},
+							"Applicant Person ID Type": {
+								"type": "string"
+							},
+							"Applicant Person ID": {
+								"type": "string"
+							},
+							"Applicant Organisation ID Type": {
+								"type": "null"
+							},
+							"Applicant Organisation ID": {
+								"type": "null"
+							},
+							"Submitting Organisation ID Type": {
+								"type": "string"
+							},
+							"Submitting Organisation ID": {
+								"type": "string"
+							},
+							"Affiliated Organisation Group ID": {
+								"type": "string"
+							},
+							"Person ID Type": {
+								"type": "string"
+							},
+							"Person ID": {
+								"type": "string"
+							},
+							"Role": {
+								"type": "string"
+							},
+							"Resource Type": {
+								"type": "string"
+							},
+							"Minimum Resource Quantity": {
+								"type": "number"
+							},
+							"Maximum Resource Quantity": {
+								"type": "number"
+							},
+							"Resource Measure - Currency": {
+								"type": "null"
+							},
+							"Resource Measure - Non-Currency": {
+								"type": "string"
+							},
+							"Resource Value": {
+								"type": "number"
+							},
+							"Start Date": {
+								"type": "string"
+							},
+							"End Date": {
+								"type": "string"
+							},
+							"Local Proposal ID": {
+								"type": "string"
+							},
+							"Proposal Title 2": {
+								"type": "string"
+							},
+							"ANZSRC Type of Activity": {
+								"type": "string"
+							},
+							"Share of ANZSRC Type of Activity": {
+								"type": "number"
+							},
+							"ANZSRC Field of Research": {
+								"type": "number"
+							},
+							"Share of ANZSRC Field of Research": {
+								"type": "number"
+							},
+							"ANZSRC Socioeconomic objective": {
+								"type": "number"
+							},
+							"Share of ANZSRC Socioeconomic objective": {
+								"type": "number"
+							},
+							"Protection Pattern 1": {
+								"type": "string"
+							},
+							"Protection Expiration 1": {
+								"type": "string"
+							},
+							"Expiry Date 1": {
+								"type": "null"
+							},
+							"Protection Pattern 2": {
+								"type": "null"
+							},
+							"Protection Expiration 2": {
+								"type": "null"
+							},
+							"Expiry Date 2": {
+								"type": "null"
+							},
+							"Protection Pattern 3": {
+								"type": "null"
+							},
+							"Protection Expiration 3": {
+								"type": "null"
+							},
+							"Expiry Date 3": {
+								"type": "null"
+							}
+						}
+					}
+				},
+				"AMApplicationEXTRA": {
+					"type": "array"
+				},
+				"AMApplicationReview": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"Item": {
+								"type": "string"
+							},
+							"Data Owner ID": {
+								"type": "null"
+							},
+							"Local Application ID": {
+								"type": "string"
+							},
+							"Local Review ID": {
+								"type": "string"
+							},
+							"Assignment Date": {
+								"type": "string"
+							},
+							"Review Date": {
+								"type": "string"
+							},
+							"Prior Local Review ID": {
+								"type": "string"
+							},
+							"Review Method": {
+								"type": "string"
+							},
+							"Review Score 1": {
+								"type": "number"
+							},
+							"Review Score Minimum 1": {
+								"type": "number"
+							},
+							"Review Score Maximum 1": {
+								"type": "number"
+							},
+							"Review Outcome": {
+								"type": "string"
+							},
+							"Review Local Group ID": {
+								"type": "number"
+							},
+							"Host Organisation ID Type": {
+								"type": "string"
+							},
+							"Host Organisation ID": {
+								"type": "string"
+							},
+							"Person ID Type": {
+								"type": "string"
+							},
+							"Person ID": {
+								"type": "string"
+							},
+							"Lead Reviewer Flag": {
+								"type": "string"
+							},
+							"Review Score 2": {
+								"type": "number"
+							},
+							"Review Score Minimum 2": {
+								"type": "number"
+							},
+							"Review Score Maximum 2": {
+								"type": "number"
+							},
+							"Protection Pattern 1": {
+								"type": "string"
+							},
+							"Protection Expiration 1": {
+								"type": "string"
+							},
+							"Expiry Date 1": {
+								"type": "null"
+							},
+							"Protection Pattern 2": {
+								"type": "null"
+							},
+							"Protection Expiration 2": {
+								"type": "null"
+							},
+							"Expiry Date 2": {
+								"type": "null"
+							},
+							"Protection Pattern 3": {
+								"type": "null"
+							},
+							"Protection Expiration 3": {
+								"type": "null"
+							},
+							"Expiry Date 3": {
+								"type": "null"
+							}
+						}
+					}
+				},
+				"AMApplicationReviewEXTRA": {
+					"type": "array"
+				},
+				"AMApplicationDecision": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"Item": {
+								"type": "string"
+							},
+							"Data Owner ID": {
+								"type": "null"
+							},
+							"Local Application ID": {
+								"type": "string"
+							},
+							"Local Decision ID": {
+								"type": "string"
+							},
+							"Prior Local Decision ID": {
+								"type": "string"
+							},
+							"Decision Date": {
+								"type": "string"
+							},
+							"Decision": {
+								"type": "string"
+							},
+							"Additional Information": {
+								"type": "string"
+							},
+							"Decision Local Group ID": {
+								"type": "number"
+							},
+							"Person ID Type": {
+								"type": "string"
+							},
+							"Person ID": {
+								"type": "string"
+							},
+							"Lead Decision Maker Flag": {
+								"type": "string"
+							},
+							"Protection Pattern 1": {
+								"type": "string"
+							},
+							"Protection Expiration 1": {
+								"type": "string"
+							},
+							"Expiry Date 1": {
+								"type": "null"
+							},
+							"Protection Pattern 2": {
+								"type": "null"
+							},
+							"Protection Expiration 2": {
+								"type": "null"
+							},
+							"Expiry Date 2": {
+								"type": "null"
+							},
+							"Protection Pattern 3": {
+								"type": "null"
+							},
+							"Protection Expiration 3": {
+								"type": "null"
+							},
+							"Expiry Date 3": {
+								"type": "null"
+							}
+						}
+					}
+				},
+				"AMApplicationDecisionEXTRA": {
+					"type": "array"
+				},
+				"AMAwardGranted": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"Item": {
+								"type": "string"
+							},
+							"Data Owner ID": {
+								"type": "null"
+							},
+							"Local Asset Pool ID": {
+								"type": "string"
+							},
+							"Local Distribution ID": {
+								"type": "string"
+							},
+							"Local Application ID": {
+								"type": "null"
+							},
+							"Local Award ID": {
+								"type": "string"
+							},
+							"Parent Local Award ID": {
+								"type": "string"
+							},
+							"Local Contract ID": {
+								"type": "string"
+							},
+							"Parent Local Contract ID": {
+								"type": "null"
+							},
+							"Award Title": {
+								"type": "string"
+							},
+							"Award Description": {
+								"type": "string"
+							},
+							"Award Start Date": {
+								"type": "string"
+							},
+							"Award End Date": {
+								"type": "string"
+							},
+							"Award Status": {
+								"type": "string"
+							},
+							"Award Type": {
+								"type": "string"
+							},
+							"Asset Pool Recipient ID Type": {
+								"type": "string"
+							},
+							"Asset Pool Recipient ID": {
+								"type": "string"
+							},
+							"Individual Recipient ID Type": {
+								"type": "null"
+							},
+							"Individual Recipient ID": {
+								"type": "null"
+							},
+							"Organisation ID Type": {
+								"type": "string"
+							},
+							"Organisation ID": {
+								"type": "string"
+							},
+							"Organisation Role": {
+								"type": "string"
+							},
+							"Person ID Type": {
+								"type": "string"
+							},
+							"Person ID": {
+								"type": "string"
+							},
+							"Role": {
+								"type": "string"
+							},
+							"Local Role Description": {
+								"type": "string"
+							},
+							"Local Resource ID": {
+								"type": "string"
+							},
+							"Resource Type": {
+								"type": "string"
+							},
+							"Minimum Resource Quantity": {
+								"type": "number"
+							},
+							"Maximum Resource Quantity": {
+								"type": "null"
+							},
+							"Resource Measure - Currency": {
+								"type": "string"
+							},
+							"Resource Measure - Non-Currency": {
+								"type": "null"
+							},
+							"Resource Value": {
+								"type": "number"
+							},
+							"Start Date": {
+								"type": "string"
+							},
+							"End Date": {
+								"type": "string"
+							},
+							"Constraint Type": {
+								"type": "string"
+							},
+							"Resource Constraint": {
+								"type": "string"
+							},
+							"ANZSRC Type of Activity": {
+								"type": "string"
+							},
+							"Share of ANZSRC Type of Activity": {
+								"type": "number"
+							},
+							"ANZSRC Field of Research": {
+								"type": "number"
+							},
+							"Share of ANZSRC Field of Research": {
+								"type": "number"
+							},
+							"ANZSRC Socioeconomic Objective": {
+								"type": "number"
+							},
+							"Share of ANZSRC Socioeconomic Objective": {
+								"type": "number"
+							},
+							"Public Sector Research Alignment": {
+								"type": "string"
+							},
+							"Theme, Priority or Programme - CoRE Theme": {
+								"type": "string"
+							},
+							"Share of Theme - CoRE": {
+								"type": "number"
+							},
+							"Theme, Priority or Programme - NSC Theme": {
+								"type": "null"
+							},
+							"Share of Theme - NSC": {
+								"type": "null"
+							},
+							"Theme, Priority or Programme - HRC Theme": {
+								"type": "null"
+							},
+							"Share of Theme - HRC": {
+								"type": "null"
+							},
+							"Theme, Priority or Programme - MPI Theme": {
+								"type": "null"
+							},
+							"Share of Theme - MPI": {
+								"type": "null"
+							},
+							"Theme, Priority or Programme - Vision Matāuranga Theme": {
+								"type": "null"
+							},
+							"Share of Theme - Vision Matāuranga": {
+								"type": "null"
+							},
+							"Protection Pattern 1": {
+								"type": "string"
+							},
+							"Protection Expiration 1": {
+								"type": "string"
+							},
+							"Expiry Date 1": {
+								"type": "null"
+							},
+							"Protection Pattern 2": {
+								"type": "null"
+							},
+							"Protection Expiration 2": {
+								"type": "null"
+							},
+							"Expiry Date 2": {
+								"type": "null"
+							},
+							"Protection Pattern 3": {
+								"type": "null"
+							},
+							"Protection Expiration 3": {
+								"type": "null"
+							},
+							"Expiry Date 3": {
+								"type": "null"
+							}
+						}
+					}
+				},
+				"AMAwardGrantedEXTRA": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"Item": {
+								"type": "string"
+							},
+							"Local Award ID": {
+								"type": "string"
+							},
+							"Organisation ID Type": {
+								"type": "string"
+							},
+							"Organisation ID": {
+								"type": "string"
+							},
+							"Organisation Role": {
+								"type": "string"
+							},
+							"Person ID Type": {
+								"type": "null"
+							},
+							"Person ID": {
+								"type": "null"
+							},
+							"Role": {
+								"type": "null"
+							},
+							"Local Role Description": {
+								"type": "null"
+							},
+							"Local Resource ID": {
+								"type": "null"
+							},
+							"Resource Type": {
+								"type": "null"
+							},
+							"Minimum Resource Quantity": {
+								"type": "null"
+							},
+							"Maximum Resource Quantity": {
+								"type": "null"
+							},
+							"Resource Measure - Currency": {
+								"type": "null"
+							},
+							"Resource Measure - Non-Currency": {
+								"type": "null"
+							},
+							"Resource Value": {
+								"type": "null"
+							},
+							"Start Date": {
+								"type": "null"
+							},
+							"End Date": {
+								"type": "null"
+							},
+							"Constraint Type": {
+								"type": "null"
+							},
+							"Resource Constraint": {
+								"type": "null"
+							},
+							"ANZSRC Type of Activity": {
+								"type": "null"
+							},
+							"Share of ANZSRC Type of Activity": {
+								"type": "null"
+							},
+							"ANZSRC Field of Research": {
+								"type": "null"
+							},
+							"Share of ANZSRC Field of Research": {
+								"type": "null"
+							},
+							"ANZSRC Socioeconomic Objective": {
+								"type": "null"
+							},
+							"Share of ANZSRC Socioeconomic Objective": {
+								"type": "null"
+							},
+							"Public Sector Research Alignment": {
+								"type": "null"
+							},
+							"Theme, Priority or Programme - CoRE Theme": {
+								"type": "null"
+							},
+							"Share of Theme - CoRE": {
+								"type": "null"
+							},
+							"Theme, Priority or Programme - NSC Theme": {
+								"type": "null"
+							},
+							"Share of Theme - NSC": {
+								"type": "null"
+							},
+							"Theme, Priority or Programme - HRC Theme": {
+								"type": "null"
+							},
+							"Share of Theme - HRC": {
+								"type": "null"
+							},
+							"Theme, Priority or Programme - MPI Theme": {
+								"type": "null"
+							},
+							"Share of Theme - MPI": {
+								"type": "null"
+							},
+							"Theme, Priority or Programme - Vision Matāuranga Theme": {
+								"type": "null"
+							},
+							"Share of Theme - Vision Matāuranga": {
+								"type": "null"
+							}
+						}
+					}
+				},
+				"AMResourceDistributed": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"Item": {
+								"type": "string"
+							},
+							"Data Owner ID": {
+								"type": "null"
+							},
+							"Local Asset Pool ID": {
+								"type": "string"
+							},
+							"Local Award ID": {
+								"type": "string"
+							},
+							"Local Contract ID": {
+								"type": "string"
+							},
+							"Local Resource Distributed ID": {
+								"type": "string"
+							},
+							"Distributing Organisation ID Type": {
+								"type": "string"
+							},
+							"Distributing Organisation ID": {
+								"type": "string"
+							},
+							"Award Type": {
+								"type": "string"
+							},
+							"Recipient ID Type - Organisation Identifier Type": {
+								"type": "string"
+							},
+							"Recipient ID Type - Individual": {
+								"type": "null"
+							},
+							"Recipient ID Type - Asset Pool": {
+								"type": "null"
+							},
+							"Recipient ID": {
+								"type": "string"
+							},
+							"Resource Type": {
+								"type": "string"
+							},
+							"Resource Actual Quantity": {
+								"type": "number"
+							},
+							"Resource Measure - Currency": {
+								"type": "string"
+							},
+							"Resource Measure - Non-Currency": {
+								"type": "null"
+							},
+							"Resource Value": {
+								"type": "number"
+							},
+							"Distribution Basis": {
+								"type": "string"
+							},
+							"Distribution Start Date": {
+								"type": "string"
+							},
+							"Distribution End Date": {
+								"type": "string"
+							},
+							"Protection Pattern 1": {
+								"type": "string"
+							},
+							"Protection Expiration 1": {
+								"type": "string"
+							},
+							"Expiry Date 1": {
+								"type": "string"
+							},
+							"Protection Pattern 2": {
+								"type": "null"
+							},
+							"Protection Expiration 2": {
+								"type": "null"
+							},
+							"Expiry Date 2": {
+								"type": "null"
+							},
+							"Protection Pattern 3": {
+								"type": "null"
+							},
+							"Protection Expiration 3": {
+								"type": "null"
+							},
+							"Expiry Date 3": {
+								"type": "null"
+							}
+						}
+					}
+				},
+				"RMProject": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"Item": {
+								"type": "string"
+							},
+							"Data Owner ID": {
+								"type": "number"
+							},
+							"Parent Project Local ID": {
+								"type": "string"
+							},
+							"Local Project ID": {
+								"type": "string"
+							},
+							"Project Title": {
+								"type": "string"
+							},
+							"Project Description": {
+								"type": "string"
+							},
+							"Keywords": {
+								"type": "string"
+							},
+							"Project Start Date": {
+								"type": "string"
+							},
+							"Project End Date": {
+								"type": "string"
+							},
+							"Project Status": {
+								"type": "string"
+							},
+							"Benefiting Region": {
+								"type": "string"
+							},
+							"Project Type": {
+								"type": "string"
+							},
+							"Share of Project Type": {
+								"type": "number"
+							},
+							"ANZSRC Type of Activity": {
+								"type": "string"
+							},
+							"Share of ANZSRC Type of Activity": {
+								"type": "number"
+							},
+							"ANZSRC Field of Research": {
+								"type": "number"
+							},
+							"Share of ANZSRC Field of Research": {
+								"type": "number"
+							},
+							"ANZSRC Socioeconomic Objective": {
+								"type": "number"
+							},
+							"Share of ANZSRC Socioeconomic Objective": {
+								"type": "number"
+							},
+							"Public Sector Research Alignment": {
+								"type": "string"
+							},
+							"Theme, Priority or Programme - CoRE Theme": {
+								"type": "string"
+							},
+							"Share of Theme - CoRE": {
+								"type": "number"
+							},
+							"Theme, Priority or Programme - NSC Theme": {
+								"type": "null"
+							},
+							"Share of Theme - NSC": {
+								"type": "null"
+							},
+							"Theme, Priority or Programme - HRC Theme": {
+								"type": "null"
+							},
+							"Share of Theme - HRC": {
+								"type": "null"
+							},
+							"Theme, Priority or Programme - MPI Theme": {
+								"type": "null"
+							},
+							"Share of Theme - MPI": {
+								"type": "null"
+							},
+							"Theme, Priority or Programme - Vision Matāuranga Theme": {
+								"type": "null"
+							},
+							"Share of Theme - Vision Matāuranga": {
+								"type": "null"
+							},
+							"Person ID Type": {
+								"type": "string"
+							},
+							"Person ID": {
+								"type": "string"
+							},
+							"Personnel Role": {
+								"type": "string"
+							},
+							"Start Date": {
+								"type": "string"
+							},
+							"End Date": {
+								"type": "string"
+							},
+							"FTE Allocation": {
+								"type": "number"
+							},
+							"Local Role Description": {
+								"type": "string"
+							},
+							"Protection Pattern 1": {
+								"type": "string"
+							},
+							"Protection Expiration 1": {
+								"type": "string"
+							},
+							"Expiry Date 1": {
+								"type": "null"
+							},
+							"Protection Pattern 2": {
+								"type": "null"
+							},
+							"Protection Expiration 2": {
+								"type": "null"
+							},
+							"Expiry Date 2": {
+								"type": "null"
+							},
+							"Protection Pattern 3": {
+								"type": "null"
+							},
+							"Protection Expiration 3": {
+								"type": "null"
+							},
+							"Expiry Date 3": {
+								"type": "null"
+							}
+						}
+					}
+				},
+				"RMProjectEXTRA": {
+					"type": "array"
+				},
+				"RMAwardReceived": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"Item": {
+								"type": "string"
+							},
+							"Data Owner ID": {
+								"type": "number"
+							},
+							"Asset Pool ID": {
+								"type": "string"
+							},
+							"Asset Pool Name": {
+								"type": "string"
+							},
+							"Parent Local Award ID": {
+								"type": "string"
+							},
+							"Local Award ID": {
+								"type": "string"
+							},
+							"Local Contract ID": {
+								"type": "string"
+							},
+							"Local Project ID": {
+								"type": "string"
+							},
+							"Award Title": {
+								"type": "string"
+							},
+							"Award Description": {
+								"type": "string"
+							},
+							"Subject to Open Contestability": {
+								"type": "string"
+							},
+							"Award Start Date": {
+								"type": "string"
+							},
+							"Award End Date": {
+								"type": "string"
+							},
+							"Award Status": {
+								"type": "string"
+							},
+							"Award Type": {
+								"type": "string"
+							},
+							"Asset Pool Recipient ID Type": {
+								"type": "string"
+							},
+							"Asset Pool Recipient ID": {
+								"type": "string"
+							},
+							"Individual Recipient ID Type": {
+								"type": "null"
+							},
+							"Individual Recipient ID": {
+								"type": "null"
+							},
+							"Organisation ID Type": {
+								"type": "string"
+							},
+							"Organisation ID": {
+								"type": "string"
+							},
+							"Organisation Role": {
+								"type": "string"
+							},
+							"Person ID Type": {
+								"type": "string"
+							},
+							"Person ID": {
+								"type": "string"
+							},
+							"Role": {
+								"type": "string"
+							},
+							"Local Role Description": {
+								"type": "null"
+							},
+							"Local Resource ID": {
+								"type": "string"
+							},
+							"Resource Type": {
+								"type": "string"
+							},
+							"Minimum Resource Quantity": {
+								"type": "number"
+							},
+							"Maximum Resource Quantity": {
+								"type": "null"
+							},
+							"Resource Measure - Currency": {
+								"type": "string"
+							},
+							"Resource Measure - Non-Currency": {
+								"type": "null"
+							},
+							"Resource Value": {
+								"type": "number"
+							},
+							"Start Date": {
+								"type": "string"
+							},
+							"End Date": {
+								"type": "string"
+							},
+							"Constraint Type": {
+								"type": "null"
+							},
+							"Resource Constraint": {
+								"type": "null"
+							},
+							"Protection Pattern 1": {
+								"type": "string"
+							},
+							"Protection Expiration 1": {
+								"type": "string"
+							},
+							"Expiry Date 1": {
+								"type": "null"
+							},
+							"Protection Pattern 2": {
+								"type": "null"
+							},
+							"Protection Expiration 2": {
+								"type": "null"
+							},
+							"Expiry Date 2": {
+								"type": "null"
+							},
+							"Protection Pattern 3": {
+								"type": "null"
+							},
+							"Protection Expiration 3": {
+								"type": "null"
+							},
+							"Expiry Date 3": {
+								"type": "null"
+							}
+						}
+					}
+				},
+				"RMAwardReceivedEXTRA": {
+					"type": "array"
+				},
+				"RMResourceReceived": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"Item": {
+								"type": "string"
+							},
+							"Data Owner ID": {
+								"type": "number"
+							},
+							"Local Asset Pool ID": {
+								"type": "string"
+							},
+							"Local Award ID": {
+								"type": "string"
+							},
+							"Local Contract ID": {
+								"type": "string"
+							},
+							"Local Resource Received ID": {
+								"type": "string"
+							},
+							"Distributing Organisation ID Type": {
+								"type": "string"
+							},
+							"Distributing Organisation ID": {
+								"type": "string"
+							},
+							"Award Type": {
+								"type": "string"
+							},
+							"Recipient ID Type - Organisation": {
+								"type": "string"
+							},
+							"Recipient ID Type - Individual": {
+								"type": "null"
+							},
+							"Recipient ID Type - Asset Pool": {
+								"type": "null"
+							},
+							"Recipient ID": {
+								"type": "string"
+							},
+							"Resource Type": {
+								"type": "string"
+							},
+							"Resource Actual Quantity": {
+								"type": "number"
+							},
+							"Resource Measure - Currency": {
+								"type": "string"
+							},
+							"Resource Measure - Non-Currency": {
+								"type": "null"
+							},
+							"Resource Value": {
+								"type": "number"
+							},
+							"Distribution Basis": {
+								"type": "string"
+							},
+							"Distribution Start Date": {
+								"type": "string"
+							},
+							"Distribution End Date": {
+								"type": "string"
+							},
+							"Protection Pattern 1": {
+								"type": "string"
+							},
+							"Protection Expiration 1": {
+								"type": "string"
+							},
+							"Expiry Date 1": {
+								"type": "string"
+							},
+							"Protection Pattern 2": {
+								"type": "null"
+							},
+							"Protection Expiration 2": {
+								"type": "null"
+							},
+							"Expiry Date 2": {
+								"type": "null"
+							},
+							"Protection Pattern 3": {
+								"type": "null"
+							},
+							"Protection Expiration 3": {
+								"type": "null"
+							},
+							"Expiry Date 3": {
+								"type": "null"
+							}
+						}
+					}
+				},
+				"RMOutput": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"Item": {
+								"type": "string"
+							},
+							"Data Owner ID": {
+								"type": "number"
+							},
+							"ORCID Output Type": {
+								"type": "string"
+							},
+							"TEC Output Type": {
+								"type": "string"
+							},
+							"Output Language": {
+								"type": "string"
+							},
+							"Local Output Type": {
+								"type": "string"
+							},
+							"Output Title": {
+								"type": "string"
+							},
+							"Access Type": {
+								"type": "string"
+							},
+							"Production Date": {
+								"type": "string"
+							},
+							"Output Description": {
+								"type": "string"
+							},
+							"Local Project ID": {
+								"type": "string"
+							},
+							"Person ID Type": {
+								"type": "string"
+							},
+							"Person ID": {
+								"type": "string"
+							},
+							"Output ID Type": {
+								"type": "string"
+							},
+							"Output ID": {
+								"type": "string"
+							},
+							"Protection Pattern 1": {
+								"type": "string"
+							},
+							"Protection Expiration 1": {
+								"type": "string"
+							},
+							"Expiry Date 1": {
+								"type": "null"
+							},
+							"Protection Pattern 2": {
+								"type": "null"
+							},
+							"Protection Expiration 2": {
+								"type": "null"
+							},
+							"Expiry Date 2": {
+								"type": "null"
+							},
+							"Protection Pattern 3": {
+								"type": "null"
+							},
+							"Protection Expiration 3": {
+								"type": "null"
+							},
+							"Expiry Date 3": {
+								"type": "null"
+							}
+						}
+					}
+				},
+				"RMOutputEXTRA": {
+					"type": "array"
+				}
+			}
+		}
+	}
+}
