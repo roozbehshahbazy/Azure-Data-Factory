@@ -159,6 +159,15 @@
 									"name": "DateDataExtracted",
 									"type": "String"
 								}
+							},
+							{
+								"source": {
+									"path": "$['0']"
+								},
+								"sink": {
+									"name": "SubmissionMasterKey",
+									"type": "Int32"
+								}
 							}
 						],
 						"collectionReference": "$['Submission']",
