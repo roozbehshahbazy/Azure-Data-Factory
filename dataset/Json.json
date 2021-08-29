@@ -10,10 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": {
-					"value": "*.json",
-					"type": "Expression"
-				},
 				"container": "thetajsonfiles"
 			}
 		},
