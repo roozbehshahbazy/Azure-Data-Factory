@@ -36,6 +36,80 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "job",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PartitionKey",
+									"type": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "Timestamp",
+									"type": "DateTimeOffset"
+								}
+							},
+							{
+								"source": {
+									"name": "employeeName",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "employeeName",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "hireDate",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "hireDate",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "job",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "job",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "salary",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "salary",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "sex",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "sex",
+									"type": "String"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
